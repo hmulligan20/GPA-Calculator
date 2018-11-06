@@ -1,0 +1,54 @@
+print("For these questions enter the number of classes you are taking in which you have received those grades.")
+a = float(input("How many A's do you have?"))
+b = float(input("How many A-'s do you have?"))
+c = float(input("How many B+'s do you have?"))
+d = float(input("How many honors/AP courses are you taking?"))
+e = a*11
+f = b*10
+g = c*9
+h = d*2
+i = (float(e+f+g+h)/(a+b+c))
+print(i)
+print("This is your 11 point GPA.")
+j = ((i+1)/3)
+print(j)
+print("This is your 4 point GPA.")
+k = input("What grade are you in? (freshman, sophomore, etc.)")
+if k == "freshman" or k == "Freshman":
+  for number in range(0,1):
+    l = float(input("What was your 4 point GPA last semester?"))
+    m = ((j+l)/2)
+    print(m)
+    print("This is your High School GPA.")
+elif k == "sophomore" or k == "Sophomore":
+  l = float(input("What was your 4 point GPA last semester?"))
+  m = ((j+l)/2)
+  print(m)
+  print("This is your year average GPA.")
+  n = float(input("What was your GPA last year?"))
+  o = ((n+m)/2)
+  print(o)
+  print("This is your entire High School GPA.")
+elif k == "junior" or k == "Junior":
+  l = float(input("What was your 4 point GPA last semester?"))
+  m = ((j+l)/2)
+  print(m)
+  print("This is your year average GPA.")
+  n = float(input("What was your GPA freshman year?"))
+  o = float(input("What was your GPA sophmore year?"))
+  p = ((m+n+o)/3)
+  print(p)
+  print("This is your entire High School GPA.")
+elif k == "senior" or k == "Senior":
+  l = float(input("What was your 4 point GPA last semester?"))
+  m = ((j+l)/2)
+  print(m)
+  print("This is your year average GPA.")
+  n = float(input("What was your GPA freshman year?"))
+  o = float(input("What was your GPA sophmore year?"))
+  p = float(input("What was your GPA junior year?"))
+  q = ((m+n+o+p)/4)
+  print(q)
+  print("This is your entire High School GPA.")
+else:
+  print("Please type in a school grade")
