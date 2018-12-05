@@ -1,4 +1,5 @@
 # Copyright © 2018, Haley Mulligan #
+
 print("For these questions enter the number of classes you are taking in which you have received those grades.")
 a = float(input("How many A's do you have?"))
 b = float(input("How many A-'s do you have?"))
